@@ -57,3 +57,17 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form input {
+  max-width: 40px;
+  padding: 0;
+  margin: 0;
+}
+</style>

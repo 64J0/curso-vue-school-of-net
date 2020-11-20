@@ -1,5 +1,8 @@
 <template>
-  <div style="display: flex; flex-direction: row; align-items: center">
+  <div
+    style="display: flex; flex-direction: row; align-items: center"
+    class="clube"
+  >
     <img
       :src="time.escudo"
       alt=""
@@ -20,9 +23,13 @@ export default {
 </script>
 
 <style scoped>
+.clube {
+  margin: 10px;
+}
+
 .escudo {
   width: 30px;
   height: 30px;
-  margin-right: 6px;
+  margin: 6px;
 }
 </style>
