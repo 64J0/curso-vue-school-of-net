@@ -17,6 +17,7 @@ Assim como no AngularJS, no Vue também são utilizadas **diretivas** nas tags H
   * **updated():**
   * **beforeDestroy():** Define as informações que devem ser destruídas para liberar espaço de memória e diminuir o processamento da aplicação. Vai depender da necessidade. Nessa etapa ainda é possível acessar os dados e métodos do componente.
   * **destroyed():** Nesta etapa é recomendado destruir as informações que não são diretamente ligadas ao Vue, porém que podem ser adicionadas à aplicação, como a definição de eventos da tela, etc.
+* Curso 6: Neste curso são abordados assuntos relacionados ao Vuex, que é uma ferramenta muito útil para lidar com os estados da aplicação, fornecendo uma única *fonte de verdade* para os componentes.
 
 ---
 Vinícius Gajo Marques Oliveira, 2020
