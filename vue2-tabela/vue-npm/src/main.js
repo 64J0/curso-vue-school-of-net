@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Vue from 'vue'
 import App from './App.vue'
 import Titulo from './components/Titulo.vue'
@@ -10,15 +9,21 @@ import ClubesLibertadores from './components/ClubesLibertadores.vue'
 import ClubesRebaixados from './components/ClubesRebaixados.vue'
 import Placar from './components/Placar.vue'
 import Clube from './components/Clube.vue'
+import ModalMaterialize from './components/ModalMaterialize.vue'
+import PlacarModalMaterialize from './components/PlacarModalMaterialize.vue'
 import Time from './time'
 
 // coisas horriveis do bootstrap
 import $ from 'jquery'
-import Popperjs from 'popper.js'
-
+// import Popperjs from 'popper.js'
+// require('bootstrap/dist/css/bootstrap.min.css')
 window.jQuery = window.$ = $
-window.Popper = Popperjs
-require('bootstrap')
+// window.Popper = Popperjs
+// require('bootstrap')
+
+// coisas horriveis do materialize
+import 'materialize-css/dist/css/materialize.min.css'
+window.M = require('materialize-css')
 
 Vue.config.productionTip = false
 
@@ -34,6 +39,9 @@ Vue.component('placar-modal', PlacarModal)
 Vue.component('clubes-libertadores', ClubesLibertadores)
 Vue.component('clubes-rebaixados', ClubesRebaixados)
 Vue.component('placar', Placar)
+Vue.component('clube', Clube)
+Vue.component('modal-materialize', ModalMaterialize)
+Vue.component('placar-modal-materialize', PlacarModalMaterialize)
 Vue.component('clube', Clube)
 
 new Vue({
