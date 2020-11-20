@@ -17,10 +17,11 @@ Assim como no AngularJS, no Vue também são utilizadas **diretivas** nas tags H
   * **updated():**
   * **beforeDestroy():** Define as informações que devem ser destruídas para liberar espaço de memória e diminuir o processamento da aplicação. Vai depender da necessidade. Nessa etapa ainda é possível acessar os dados e métodos do componente.
   * **destroyed():** Nesta etapa é recomendado destruir as informações que não são diretamente ligadas ao Vue, porém que podem ser adicionadas à aplicação, como a definição de eventos da tela, etc.
-* Curso 6: Neste curso são abordados assuntos relacionados ao **Vuex**, que é uma ferramenta muito útil para lidar com os estados da aplicação, fornecendo uma única *fonte de verdade* para os componentes. Como esse curso é de 2016 algumas coisas já foram alteradas e diversas informações não são mais pertinentes, porém ainda é possível aproveitar alguns conceitos.
+* Curso 6: Neste curso são abordados assuntos relacionados ao **Vuex**, que é uma ferramenta muito útil para lidar com os estados da aplicação, fornecendo uma única *fonte de verdade* para os componentes. Como esse curso é de 2016 algumas coisas já foram alteradas e diversas informações não são mais pertinentes, porém ainda é possível aproveitar alguns conceitos. Por fim é apresentado bem resumidamente a ferramenta de *debug* que é a extensão criada pelo próprio time de desenvolvimento do Vue.
   * **Flux:** Ferramenta criada por uma equipe do Facebook. Foi a principal ferramenta utilizada como fonte para o desenvolvimento do Vuex. Os dados em uma aplicação *Flux* seguem em apenas uma única direção:
     * *Action --> Dispatcher --> Store --> View*
   * **Redux:** Uma ferramenta que implementa o Flux de maneira simplificada. 
+  * **Vuex:** Solução semelhante ao Redux porém voltada para o Vue.
 
 ---
 Vinícius Gajo Marques Oliveira, 2020
