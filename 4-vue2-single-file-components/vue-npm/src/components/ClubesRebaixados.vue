@@ -2,7 +2,7 @@
   <div>
     <h3>Time rebaixados</h3>
     <ul>
-      <li v-for="time in timesRebaixados" :key="time">
+      <li v-for="(time, index) in timesRebaixados" :key="index">
         <clube :time="time"></clube>
       </li>
     </ul>
@@ -11,9 +11,10 @@
 
 <script>
 export default {
+  props: ["times"],
   computed: {
     timesRebaixados() {
-      return this.times.slice(16, 20);
+      return this.times ? this.times.slice(16, 20) : null;
     },
   },
 };

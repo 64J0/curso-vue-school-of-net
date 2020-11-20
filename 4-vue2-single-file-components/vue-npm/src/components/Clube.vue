@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex; flex-direction: row">
+  <div style="display: flex; flex-direction: row; align-items: center">
     <img
       :src="time.escudo"
       alt=""
@@ -18,3 +18,11 @@ export default {
   props: ["time", "invertido"],
 };
 </script>
+
+<style scoped>
+.escudo {
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+}
+</style>

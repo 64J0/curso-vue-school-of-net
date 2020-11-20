@@ -2,7 +2,7 @@
   <div>
     <h3>Time classificados para libertadores</h3>
     <ul>
-      <li v-for="time in timesLibertadores">
+      <li v-for="(time, index) in timesLibertadores" :key="index">
         <clube :time="time"></clube>
       </li>
     </ul>
@@ -11,9 +11,10 @@
 
 <script>
 export default {
+  props: ["times"],
   computed: {
     timesLibertadores() {
-      return this.times.slice(0, 6);
+      return this.times ? this.times.slice(0, 6) : null;
     },
   },
 };
